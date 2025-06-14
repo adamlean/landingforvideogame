@@ -9,7 +9,7 @@ html, body {
   scroll-behavior: smooth;
   background-color: rgba(255, 255, 255, 1);
 
-  font-family: 'Poppins';
+  font-family: 'Inter';
   font-style: normal;
 }
 
@@ -59,7 +59,6 @@ p {
   height: 100vh;
   background: url('./assets//img/hero.png') center/cover no-repeat;
   color: #fff;
-  font-family: sans-serif;
 }
 
 .overlay {
