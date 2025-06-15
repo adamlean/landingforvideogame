@@ -23,7 +23,6 @@ html, body {
 
 section {
   width: 100%;
-  box-sizing: border-box;
 }
 
 .container {
@@ -135,4 +134,11 @@ p {
   color: white;
   border-radius: 50%;
   padding: 0.5rem;
+}
+
+.gameplay {
+  position: relative;
+  height: 100vh;
+  background: url('./assets//img/gameplay-background.png') center/cover no-repeat;
+  color: #fff;
 }
