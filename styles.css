@@ -136,9 +136,178 @@ p {
   padding: 0.5rem;
 }
 
+/* Gameplay */
+
 .gameplay {
-  position: relative;
-  height: 100vh;
-  background: url('./assets//img/gameplay-background.png') center/cover no-repeat;
+  background: radial-gradient(ellipse at center, #221b3a 0%, #1a1433 100%);
   color: #fff;
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.gameplay-text {
+  flex: 1;
+}
+
+.gameplay-text h2 {
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.description {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.features {
+  margin-top: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.gameplay-video {
+  flex: 1;
+}
+
+.video-frame {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+.video-frame img {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+/* System */
+
+.system-requirements {
+  background: url('./assets/img/system.png') no-repeat center/cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.system-requirements h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+
+.requirements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  text-align: left;
+}
+
+.spec-box {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.spec-box h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.spec-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spec-box li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.spec-box span {
+  color: #f24;
+  font-weight: bold;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tags span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* Abyss */
+
+.the-abyss {
+  background: url('./assets//img/abyss.png') no-repeat center/cover;
+  color: white;
+  padding: 100px 0;
+}
+
+.abyss-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.abyss-text h2 {
+  font-size: 48px;
+  color: #ff4444;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.abyss-text p {
+  margin-bottom: 16px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.abyss-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.abyss-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
