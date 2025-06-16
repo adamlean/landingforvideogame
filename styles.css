@@ -478,15 +478,16 @@ p {
 }
 
 .newsletter-text h2 {
-  font-size: 32px;
-  color: #fff;
   margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 70px;
 }
 
 .newsletter-text p {
-  font-size: 15px;
-  line-height: 1.6;
-  font-weight: bold;
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 16px;
 }
 
 .newsletter-form {
@@ -563,6 +564,7 @@ p {
   font-family: 'Arial Black', sans-serif;
   font-size: 22px;
   margin-bottom: 10px;
+  height: 106px;
 }
 
 .quote-source .red {
@@ -590,8 +592,11 @@ p {
 }
 
 .quote-mark {
-  font-size: 28px;
-  color: #555;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 40px;
+
+  color: #FFFFFF;
 }
 
 .decor-lines {
