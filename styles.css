@@ -363,3 +363,246 @@ p {
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+/* Footer */
+
+.main-footer {
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  padding: 40px 60px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left .logo {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-nav a {
+  margin: 0 8px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-nav span {
+  color: #888;
+}
+
+.lang-select {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.footer-middle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 40px;
+  gap: 40px;
+}
+
+.footer-col h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: #aaa;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+}
+
+.footer-col li {
+  margin-bottom: 6px;
+}
+
+.footer-content-warning {
+  text-align: right;
+}
+
+.footer-content-warning h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-content-warning .icons img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  font-size: 11px;
+  color: #777;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer-bottom .made-by {
+  color: #444;
+  margin-top: 10px;
+  font-weight: lighter;
+}
+
+/* Newsletter */
+
+.newsletter-section {
+  background: #000;
+  padding: 60px 20px;
+  color: #ccc;
+  font-family: 'Arial', sans-serif;
+}
+
+.newsletter-container {
+  max-width: 1200px;
+  height: 280px;;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.newsletter-text {
+  flex: 1 1 40%;
+}
+
+.newsletter-text h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.newsletter-text p {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+.newsletter-form {
+  flex: 1 1 50%;
+}
+
+.newsletter-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.email-row {
+  display: flex;
+  gap: 10px;
+}
+
+.email-row input[type="email"] {
+  flex: 1;
+  padding: 12px;
+  background: #111;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.email-row button {
+  background: linear-gradient(to right, #3c3c7c, #6464f3);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-top: 4px;
+}
+
+/* Quote */
+
+.quote-section {
+  background: #000;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.quote-container {
+  max-width: 1200px;
+  height: 206px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.quote-left {
+  text-align: center;
+}
+
+.quote-source {
+  font-family: 'Arial Black', sans-serif;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.quote-source .red {
+  color: #b73737;
+}
+
+.quote-source .gray {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.stars {
+  color: #ccc;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.quote-right blockquote {
+  font-family: 'Impact', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #ccc;
+  margin: 0;
+  position: relative;
+}
+
+.quote-mark {
+  font-size: 28px;
+  color: #555;
+}
+
+.decor-lines {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.decor-lines span {
+  width: 30px;
+  height: 2px;
+  background: #666;
+}
