@@ -45,8 +45,8 @@ section {
   text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
 }
 
-h2 {
-  font-family: 'Saira';
+h1, h2 {
+  font-family: 'Karantina';
   font-style: normal;
   font-weight: 400;
 
@@ -319,7 +319,7 @@ p {
 .abyss-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 76px;
   align-items: start;
 }
 
@@ -331,8 +331,6 @@ p {
   letter-spacing: 2px;
   display: flex;
 
-  font-family: 'Karantina';
-  font-style: normal;
   font-weight: 400;
   font-size: 128px;
   line-height: 130px;
