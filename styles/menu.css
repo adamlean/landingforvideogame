@@ -1,0 +1,76 @@
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  overflow-y: auto;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 40px 20px;
+}
+
+.side-menu.active {
+  transform: translateY(0);
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.menu-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.column h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.map-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-footer {
+  margin-top: 40px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  background: #222;
+  border: 1px solid #555;
+  color: white;
+  padding: 8px;
+  width: 300px;
+}
+
+.newsletter-form button {
+  background: linear-gradient(to right, #4f4c8d, #383673);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-weight: bold;
+}
