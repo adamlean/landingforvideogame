@@ -1,310 +1,364 @@
-      <!DOCTYPE html>
-      <html lang="en">
-        <head>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Landing For Videogame</title>
-          <meta
-            name="description"
-            content="Краткое описание страницы с ключевыми словами"
-          />
-          <meta name="robots" content="index, follow" />
-          <link rel="canonical" href="https://example.com/" />
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Landing For Videogame</title>
+            <meta
+              name="description"
+              content="Краткое описание страницы с ключевыми словами"
+            />
+            <meta name="robots" content="index, follow" />
+            <link rel="canonical" href="https://example.com/" />
 
-          <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-          />
-          <link rel="stylesheet" href="./styles/styles.css" />
-        </head>
-        <body>
-        <section class="hero">
-              <div class="overlay">
-          <header class="top-bar">
-            <div class="logo">Brainstorming Films</div>
-            <nav class="menu">
-              <a href="#">DEVLOG</a>
-              <a href="#">ART</a>
-              <a href="#">FEATURES</a>
-            </nav>
-            <div class="right-buttons">
-              <button class="lang-btn"></button>
-              <button class="menu-toggle">MENU</button>
-            </div>
-        
-          </header>
-          
-                <div class="hero-content">
-              
-                  <h1 class="title">
-                    <span>THE PATH</span><br />
-                    <span>INTO THE ABYSS</span>
-                  </h1>
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+            />
+            <link rel="stylesheet" href="./styles/styles.css" />
+          </head>
+          <body>
+          <section class="hero">
+                <div class="overlay">
+            <header class="top-bar">
+              <div class="logo">Brainstorming Films</div>
+              <nav class="menu">
+                <a href="#">DEVLOG</a>
+                <a href="#">ART</a>
+                <a href="#">FEATURES</a>
+              </nav>
+              <div class="right-buttons">
+                <button class="lang-btn"></button>
+                <<!-- Кнопка меню -->
+  <button id="menu-toggle" class="menu-button">MENU</button>
 
-                  <div class="buttons">
-                    <a href="#" class="btn learn">LEARN MORE</a>
-                    <a href="#" class="btn reserve">
-                      RESERVE NOW <img src="./assets/img/steam.png" alt="Steam" />
-                    </a>
-                  </div>
-
-                  <p class="disclaimer">
-                    Preorder is available via Steam, Epic Games Store, Microsoft
-                    Store, GOG, and Xbox Series.
-                  </p>
-                </div>
-
-                <footer class="social-hero">
-                  <a href="#"><img src="./assets/img/discord_social.png" alt="Discord" /></a>
-                  <a href="#"><img src="./assets/img/youtube_logo.png" alt="YouTube" /></a>
-                  <a href="#"><img src="./assets/img/twitter_logo.png" alt="Twitter" /></a>
-                </footer>
-
-                <div class="video-hint">
-                  <img src="./assets/img/" alt="" />
-                  <span>PLAY VIDEO</span>
-                  <button class="play-btn"></button>
-                </div>
-              </div>
-              </div>
-              </section>
-
-              <main>
-              <section class="gameplay">
-        <div class="container">
-          <div class="gameplay-text">
-            <h2>GAMEPLAY</h2>
-            <p class="description">
-              THE PATH INTO THE ABYSS is a next-gen Horror Survival Shooter based on the dark horror universe created by filmmaker MATÍAS RISPAU, The Path Into The Abyss is set to deliver a unique action experience of survival in the mysterious abyss that surrounds the City Of Buenos Aires.
-            </p>
-            <ul class="features">
-              <li>Experience a first person shooter gameplay, featuring elements of an RPG, sandbox and horror.</li>
-              <li>Play a major part in a story to unveil the secrets of a local dark apocalyptic fiction. Bear your right to reclaim the rule over the abyss & lead your brothers into the darkness.</li>
-              <li>Zero tolerance for SKILL ISSUES. Be advice javaScripters and others alike, life on the abyss could be a little harsh.</li>
-            </ul>
-          </div>
-
-          <div class="gameplay-video">
-            <div class="video-frame">
-              <img src="./assets/img/video.png" alt="Gameplay video" />
-              <button class="play-button"></button>
-            </div>
-          </div>
+  <!-- Выдвижное меню -->
+  <div id="side-menu" class="side-menu hidden">
+    <div class="menu-content">
+      <div class="menu-columns">
+        <div class="column">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#">Game Play</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Requirements</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">The Abyss</a></li>
+          </ul>
         </div>
-      </section>
-
-      <div class="quote-section">
-    <div class="container quote-container">
-      <div class="quote-left">
-        <h3 class="quote-source">
-           <img src="./assets/svg/cultura.svg" alt="Cultura" />
+        <div class="column">
+          <h3>Pages</h3>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">The World</a></li>
+            <li><a href="#">Devlog</a></li>
+            <li><a href="#">Art</a></li>
+          </ul>
+        </div>
+        <div class="column map-column">
+          <img src="map.jpg" alt="Map">
+        </div>
       </div>
 
-      <div class="quote-right">
-        <blockquote>
-          <span class="quote-mark">“</span>
-          To Live Is to Suffer, to Survive Is to<br>
-          Find Some Meaning in the Suffering
-          <span class="quote-mark">”</span>
-        </blockquote>
-        <div class="decor-lines">
-          <span></span><span></span><span></span>
+      <div class="menu-footer">
+        <div class="contact">
+          <p>BUSINESS CONTACT</p>
+          <p><img src="brainstorm.svg" alt=""> BRAINSTORM FILMS</p>
+          <p>FOLLOW US</p>
+          <div class="socials">
+            <a href="#"><img src="discord.svg" alt=""></a>
+            <a href="#"><img src="youtube.svg" alt=""></a>
+            <a href="#"><img src="twitter.svg" alt=""></a>
+          </div>
         </div>
+
+        <form class="newsletter-form">
+          <h3>ABYSS BULLETIN</h3>
+          <p>Subscribe to THE PATH INTO THE ABYSS newsletter...</p>
+          <input type="email" placeholder="Enter Your Email">
+          <button type="submit">SUBSCRIBE</button>
+          <label><input type="checkbox"> I consent...</label>
+          <label><input type="checkbox"> I accept the terms...</label>
+        </form>
       </div>
     </div>
   </div>
 
-      <section class="system-requirements">
-        <div class="container">
-          <h2>SYSTEM REQUIREMENTS</h2>
+              </div>
+          
+            </header>
+            
+                  <div class="hero-content">
+                
+                    <h1 class="title">
+                      <span>THE PATH</span><br />
+                      <span>INTO THE ABYSS</span>
+                    </h1>
 
-          <div class="requirements-grid">
-            <!-- Минимальные требования -->
-            <div class="spec-box">
-              <h3>MINIMUM SPECS:</h3>
-              <ul>
-                <li><strong>OS VERSION:</strong> <span>Windows 10 / Windows 11</span></li>
-                <li><strong>GRAPHICS:</strong> <span>AMD Radeon RX 580 6GB<br />NVIDIA GeForce GTX 1060 6GB</span></li>
-                <li><strong>PROCESSOR:</strong> <span>AMD Ryzen 5 1600X / Intel Core i5-7600K</span></li>
-                <li><strong>MEMORY:</strong> <span>8 GB</span></li>
-                <li><strong>DISC SPACE:</strong> <span>50 GB SSD</span></li>
+                    <div class="buttons">
+                      <a href="#" class="btn learn">LEARN MORE</a>
+                      <a href="#" class="btn reserve">
+                        RESERVE NOW <img src="./assets/img/steam.png" alt="Steam" />
+                      </a>
+                    </div>
+
+                    <p class="disclaimer">
+                      Preorder is available via Steam, Epic Games Store, Microsoft
+                      Store, GOG, and Xbox Series.
+                    </p>
+                  </div>
+
+                  <footer class="social-hero">
+                    <a href="#"><img src="./assets/img/discord_social.png" alt="Discord" /></a>
+                    <a href="#"><img src="./assets/img/youtube_logo.png" alt="YouTube" /></a>
+                    <a href="#"><img src="./assets/img/twitter_logo.png" alt="Twitter" /></a>
+                  </footer>
+
+                  <div class="video-hint">
+                    <img src="./assets/img/" alt="" />
+                    <span>PLAY VIDEO</span>
+                    <button class="play-btn"></button>
+                  </div>
+                </div>
+                </div>
+                </section>
+
+                <main>
+                <section class="gameplay">
+          <div class="container">
+            <div class="gameplay-text">
+              <h2>GAMEPLAY</h2>
+              <p class="description">
+                THE PATH INTO THE ABYSS is a next-gen Horror Survival Shooter based on the dark horror universe created by filmmaker MATÍAS RISPAU, The Path Into The Abyss is set to deliver a unique action experience of survival in the mysterious abyss that surrounds the City Of Buenos Aires.
+              </p>
+              <ul class="features">
+                <li>Experience a first person shooter gameplay, featuring elements of an RPG, sandbox and horror.</li>
+                <li>Play a major part in a story to unveil the secrets of a local dark apocalyptic fiction. Bear your right to reclaim the rule over the abyss & lead your brothers into the darkness.</li>
+                <li>Zero tolerance for SKILL ISSUES. Be advice javaScripters and others alike, life on the abyss could be a little harsh.</li>
               </ul>
             </div>
 
-            <!-- Геймплей -->
-            <div class="spec-box">
-              <h3>GAMEPLAY:</h3>
-              <ul class="gameplay-icons">
-                <li><span style="color: #ff2244;">SINGLE PLAYER</span></li>
-                <li><span style="color: #ff2244;">FULL CONTROLLER SUPPORT</span></li>
-              </ul>
-              <div class="tags">
-                <img src="./assets/img/Vector.png" alt="Fear" />
-                <img src="./assets/img/Vector-1.png" alt="Violence" />
-                <img src="./assets/img/Vector-2.png" alt="Discord" />
-                <img src="./assets/img/Vector-3.png" alt="Strong Lanquage" />
+            <div class="gameplay-video">
+              <div class="video-frame">
+                <img src="./assets/img/video.png" alt="Gameplay video" />
+                <button class="play-button"></button>
               </div>
             </div>
-
-            <!-- Рекомендованные требования -->
-            <div class="spec-box">
-              <h3>RECOMMENDED SPECS:</h3>
-              <ul>
-                <li><strong>OS VERSION:</strong> <span>Windows 10 / Windows 11</span></li>
-                <li><strong>GRAPHICS:</strong> <span>AMD Radeon RX **** 6GB<br />NVIDIA GeForce GTX **** 6GB</span></li>
-                <li><strong>PROCESSOR:</strong> <span>AMD Ryzen ****X / Intel Core i*-****K</span></li>
-                <li><strong>MEMORY:</strong> <span>** GB</span></li>
-                <li><strong>DISC SPACE:</strong> <span>50 GB SSD</span></li>
-              </ul>
-            </div>
-
-            <!-- Языки -->
-            <div class="spec-box">
-              <h3>LANGUAGE AND LOCALIZATION:</h3>
-              <p><strong>VOICES AND SUBTITLES:</strong></p>
-              <ul>
-                <li><span style="color: #ff2244;">• ENGLISH</span></li>
-                <li><span style="color: #ff2244;">• SPANISH</span></li>
-              </ul>
-              <p><strong>SUBTITLES ONLY:</strong></p>
-              <ul>
-                <li><span style="color: #ff2244;">• GERMAN</span></li>
-                <li><span style="color: #ff2244;">• ITALIAN</span></li>
-                <li><span style="color: #ff2244;">• PORTUGUESE</span></li>
-              </ul>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div class="newsletter-section">
-      <div class="container newsletter-container">
-        <div class="newsletter-text">
-          <h2>ABYSS BULLETIN</h2>
-          <p>
-            Subscribe to THE PATH INTO THE ABYSS newsletter and receive game update alerts,
-            the latest news and exclusive promotions delivered to your email.
-          </p>
+        <div class="quote-section">
+      <div class="container quote-container">
+        <div class="quote-left">
+          <h3 class="quote-source">
+            <img src="./assets/svg/cultura.svg" alt="Cultura" />
         </div>
 
-        <div class="newsletter-form">
-          <form>
-            <div class="email-row">
-              <input type="email" placeholder="Enter Your Email" required />
-              <button type="submit">SUBSCRIBE</button>
-            </div>
-
-            <label class="checkbox-label">
-              <input type="checkbox" required />
-              I consent to receive news and promotional content from Brainstorming Films in my email
-              and confirm that I am 16 years of age or older.
-            </label>
-
-            <label class="checkbox-label">
-              <input type="checkbox" required />
-              I have read and accepted the Terms and Conditions and the Privacy Policy
-            </label>
-          </form>
+        <div class="quote-right">
+          <blockquote>
+            <span class="quote-mark">“</span>
+            To Live Is to Suffer, to Survive Is to<br>
+            Find Some Meaning in the Suffering
+            <span class="quote-mark">”</span>
+          </blockquote>
+          <div class="decor-lines">
+            <span></span><span></span><span></span>
+          </div>
         </div>
       </div>
     </div>
 
-        <section class="the-abyss">
-          <div class="container abyss-grid">
-          <div class="abyss-head">
-          
-          </div>
-          
-            <div class="abyss-text">
-              <h2>THE ABYSS</h2>
-              <p>The Abyss has never been so alive as it is now. The abyss is a dark place located in a gloomy environment in Greater Buenos Aires.</p>
-              <p>Embark on a bloody journey through the sinister open world of the abyss</p>
-              <p><strong>THE PATH INTO THE ABYSS</strong> takes full advantage of the potential of Unreal Engine, delivering cutting-edge graphics and unparalleled immersion into the game world.</p>
-              <p>Its advanced artificial intelligence system forces the survivor to plan ahead when approaching enemies. The world simulation system creates a comprehensive environment in which the player’s actions alter the abyss.</p>
-              <p>Monster and humans won’t be the only dangers you’ll face.</p>
-              <p>You will witness the challenges that survivors experienced while consuming scarce supplies, such as food, drink, medication or alcohol.</p>
-              <p>Survival mechanics enhance the gameplay that tells this horror story. Will you be able to unravel the hidden secrets of this universe?</p>
-            </div>
+        <section class="system-requirements">
+          <div class="container">
+            <h2>SYSTEM REQUIREMENTS</h2>
 
-            <div class="abyss-gallery">
-              <img src="./assets/img/screenshot_1.png" alt="Screenshot 1">
-              <img src="./assets/img/screenshot_2.png" alt="Screenshot 2">
-              <img src="./assets/img/screenshot_3.png" alt="Screenshot 3">
-              <img src="./assets/img/screenshot_4.png" alt="Screenshot 4">
+            <div class="requirements-grid">
+              <!-- Минимальные требования -->
+              <div class="spec-box">
+                <h3>MINIMUM SPECS:</h3>
+                <ul>
+                  <li><strong>OS VERSION:</strong> <span>Windows 10 / Windows 11</span></li>
+                  <li><strong>GRAPHICS:</strong> <span>AMD Radeon RX 580 6GB<br />NVIDIA GeForce GTX 1060 6GB</span></li>
+                  <li><strong>PROCESSOR:</strong> <span>AMD Ryzen 5 1600X / Intel Core i5-7600K</span></li>
+                  <li><strong>MEMORY:</strong> <span>8 GB</span></li>
+                  <li><strong>DISC SPACE:</strong> <span>50 GB SSD</span></li>
+                </ul>
+              </div>
+
+              <!-- Геймплей -->
+              <div class="spec-box">
+                <h3>GAMEPLAY:</h3>
+                <ul class="gameplay-icons">
+                  <li><span style="color: #ff2244;">SINGLE PLAYER</span></li>
+                  <li><span style="color: #ff2244;">FULL CONTROLLER SUPPORT</span></li>
+                </ul>
+                <div class="tags">
+                  <img src="./assets/img/Vector.png" alt="Fear" />
+                  <img src="./assets/img/Vector-1.png" alt="Violence" />
+                  <img src="./assets/img/Vector-2.png" alt="Discord" />
+                  <img src="./assets/img/Vector-3.png" alt="Strong Lanquage" />
+                </div>
+              </div>
+
+              <!-- Рекомендованные требования -->
+              <div class="spec-box">
+                <h3>RECOMMENDED SPECS:</h3>
+                <ul>
+                  <li><strong>OS VERSION:</strong> <span>Windows 10 / Windows 11</span></li>
+                  <li><strong>GRAPHICS:</strong> <span>AMD Radeon RX **** 6GB<br />NVIDIA GeForce GTX **** 6GB</span></li>
+                  <li><strong>PROCESSOR:</strong> <span>AMD Ryzen ****X / Intel Core i*-****K</span></li>
+                  <li><strong>MEMORY:</strong> <span>** GB</span></li>
+                  <li><strong>DISC SPACE:</strong> <span>50 GB SSD</span></li>
+                </ul>
+              </div>
+
+              <!-- Языки -->
+              <div class="spec-box">
+                <h3>LANGUAGE AND LOCALIZATION:</h3>
+                <p><strong>VOICES AND SUBTITLES:</strong></p>
+                <ul>
+                  <li><span style="color: #ff2244;">• ENGLISH</span></li>
+                  <li><span style="color: #ff2244;">• SPANISH</span></li>
+                </ul>
+                <p><strong>SUBTITLES ONLY:</strong></p>
+                <ul>
+                  <li><span style="color: #ff2244;">• GERMAN</span></li>
+                  <li><span style="color: #ff2244;">• ITALIAN</span></li>
+                  <li><span style="color: #ff2244;">• PORTUGUESE</span></li>
+                </ul>
+              </div>
             </div>
-            
           </div>
         </section>
 
-      <footer class="main-footer">
-      <div class="container">
-        <div class="footer-top">
-          <div class="footer-left">
-            <div class="logo">Brainstorming Films</div>
-            <nav class="footer-nav">
-              <a href="#">DEV BLOG</a>
-              <span>/</span>
-              <a href="#">ART</a>
-              <span>/</span>
-              <a href="#">FEATURES</a>
-            </nav>
+        <div class="newsletter-section">
+        <div class="container newsletter-container">
+          <div class="newsletter-text">
+            <h2>ABYSS BULLETIN</h2>
+            <p>
+              Subscribe to THE PATH INTO THE ABYSS newsletter and receive game update alerts,
+              the latest news and exclusive promotions delivered to your email.
+            </p>
           </div>
 
-          <div class="footer-right">
-            <button class="lang-select">
-              LANGUAGE <i class="fas fa-globe"></i>
-            </button>
+          <div class="newsletter-form">
+            <form>
+              <div class="email-row">
+                <input type="email" placeholder="Enter Your Email" required />
+                <button type="submit">SUBSCRIBE</button>
+              </div>
+
+              <label class="checkbox-label">
+                <input type="checkbox" required />
+                I consent to receive news and promotional content from Brainstorming Films in my email
+                and confirm that I am 16 years of age or older.
+              </label>
+
+              <label class="checkbox-label">
+                <input type="checkbox" required />
+                I have read and accepted the Terms and Conditions and the Privacy Policy
+              </label>
+            </form>
           </div>
         </div>
+      </div>
 
-        <div class="footer-middle">
-          <div class="footer-col">
-            <h3>PLATAFORMAS</h3>
-            <ul>
-              <li><strong>XBOX GAME PASS</strong></li>
-              <li><strong>XBOX SERIES X | S</strong></li>
-              <li>Xbox One</li>
-              <li><strong>PLAYSTATION 5</strong></li>
-              <li>Playstation 4</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>PARTNERS</h3>
-            <ul>
-              <li>NOTENGOUNSOPE</li>
-              <li>SCAMMERZZ ©</li>
-              <li>#SENDCRIOLLITOS</li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h3>DEVELOPERS</h3>
-            <ul>
-              <li>ELSIN COFFEE</li>
-              <li>KEGEL SOL</li>
-              <li>JHONNY DUERMO</li>
-            </ul>
-          </div>
-          <div class="footer-content-warning">
-            <h3>MATURE CONTENT</h3>
-            <div class="icons">
-              <img src="./assets/img/Vector.png" alt="Fear">
-              <img src="./assets/img/Vector-1.png" alt="Violence">
-              <img src="./assets/img/Vector-2.png" alt="Drugs">
-              <img src="./assets/img/Vector-3.png" alt="Bad Language">
+          <section class="the-abyss">
+            <div class="container abyss-grid">
+            <div class="abyss-head">
+            
+            </div>
+            
+              <div class="abyss-text">
+                <h2>THE ABYSS</h2>
+                <p>The Abyss has never been so alive as it is now. The abyss is a dark place located in a gloomy environment in Greater Buenos Aires.</p>
+                <p>Embark on a bloody journey through the sinister open world of the abyss</p>
+                <p><strong>THE PATH INTO THE ABYSS</strong> takes full advantage of the potential of Unreal Engine, delivering cutting-edge graphics and unparalleled immersion into the game world.</p>
+                <p>Its advanced artificial intelligence system forces the survivor to plan ahead when approaching enemies. The world simulation system creates a comprehensive environment in which the player’s actions alter the abyss.</p>
+                <p>Monster and humans won’t be the only dangers you’ll face.</p>
+                <p>You will witness the challenges that survivors experienced while consuming scarce supplies, such as food, drink, medication or alcohol.</p>
+                <p>Survival mechanics enhance the gameplay that tells this horror story. Will you be able to unravel the hidden secrets of this universe?</p>
+              </div>
+
+              <div class="abyss-gallery">
+                <img src="./assets/img/screenshot_1.png" alt="Screenshot 1">
+                <img src="./assets/img/screenshot_2.png" alt="Screenshot 2">
+                <img src="./assets/img/screenshot_3.png" alt="Screenshot 3">
+                <img src="./assets/img/screenshot_4.png" alt="Screenshot 4">
+              </div>
+              
+            </div>
+          </section>
+
+        <footer class="main-footer">
+        <div class="container">
+          <div class="footer-top">
+            <div class="footer-left">
+              <div class="logo">Brainstorming Films</div>
+              <nav class="footer-nav">
+                <a href="#">DEV BLOG</a>
+                <span>/</span>
+                <a href="#">ART</a>
+                <span>/</span>
+                <a href="#">FEATURES</a>
+              </nav>
+            </div>
+
+            <div class="footer-right">
+              <button class="lang-select">
+                LANGUAGE <i class="fas fa-globe"></i>
+              </button>
             </div>
           </div>
-        </div>
 
-        <div class="footer-bottom">
-          <p>
-            © 2024 Brainstorm Films. All Rights Reserved. ... (юридический текст) ...
-          </p>
-          <p class="made-by">MADE WITH LOVE BY JOAQUIN REYNOSO</p>
-        </div>
-        </div>
-      </footer>
-        
-          </main>
-        
-        </body>
-      </html>
+          <div class="footer-middle">
+            <div class="footer-col">
+              <h3>PLATAFORMAS</h3>
+              <ul>
+                <li><strong>XBOX GAME PASS</strong></li>
+                <li><strong>XBOX SERIES X | S</strong></li>
+                <li>Xbox One</li>
+                <li><strong>PLAYSTATION 5</strong></li>
+                <li>Playstation 4</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>PARTNERS</h3>
+              <ul>
+                <li>NOTENGOUNSOPE</li>
+                <li>SCAMMERZZ ©</li>
+                <li>#SENDCRIOLLITOS</li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>DEVELOPERS</h3>
+              <ul>
+                <li>ELSIN COFFEE</li>
+                <li>KEGEL SOL</li>
+                <li>JHONNY DUERMO</li>
+              </ul>
+            </div>
+            <div class="footer-content-warning">
+              <h3>MATURE CONTENT</h3>
+              <div class="icons">
+                <img src="./assets/img/Vector.png" alt="Fear">
+                <img src="./assets/img/Vector-1.png" alt="Violence">
+                <img src="./assets/img/Vector-2.png" alt="Drugs">
+                <img src="./assets/img/Vector-3.png" alt="Bad Language">
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <p>
+              © 2024 Brainstorm Films. All Rights Reserved. ... (юридический текст) ...
+            </p>
+            <p class="made-by">MADE WITH LOVE BY JOAQUIN REYNOSO</p>
+          </div>
+          </div>
+        </footer>
+          
+            </main>
+          
+          </body>
+        </html>

@@ -1,0 +1,45 @@
+<!-- Кнопка для открытия меню -->
+<button id="menu-button" class="text-white p-4 z-50">Menu</button>
+
+<!-- Затемнение фона -->
+<div
+  id="overlay"
+  class="fixed inset-0 bg-black bg-opacity-60 hidden z-40"
+></div>
+
+<!-- Меню -->
+<div
+  id="mobile-menu"
+  class="fixed top-0 left-0 h-full w-72 bg-black text-white z-50 transform -translate-x-full transition-transform duration-300"
+>
+  <div class="flex justify-between items-center p-4">
+    <h2 class="text-xl font-bold">Navigation</h2>
+    <button id="close-menu" class="text-xl font-bold text-white">✕</button>
+  </div>
+
+  <nav class="px-4">
+    <h3 class="font-bold text-2xl font-display mb-2">Navigation</h3>
+    <ul class="space-y-2 mb-6">
+      <li><a href="#" class="block uppercase">Game Play</a></li>
+      <li><a href="#" class="block uppercase">Reviews</a></li>
+      <li><a href="#" class="block uppercase">Requirements</a></li>
+      <li><a href="#" class="block uppercase">Newsletter</a></li>
+      <li><a href="#" class="block uppercase">Features</a></li>
+    </ul>
+
+    <h3 class="font-bold text-2xl font-display mb-2">Pages</h3>
+    <ul class="space-y-2 mb-8">
+      <li><a href="#" class="block uppercase">Contact</a></li>
+      <li><a href="#" class="block uppercase">The World</a></li>
+      <li><a href="#" class="block uppercase">Dev Log</a></li>
+      <li><a href="#" class="block uppercase">Art</a></li>
+    </ul>
+
+    <p class="text-sm text-gray-400 mb-2">Follow Us On Social Media</p>
+    <div class="flex gap-4">
+      <a href="#"><img src="/icons/discord.svg" class="w-5 h-5" /></a>
+      <a href="#"><img src="/icons/youtube.svg" class="w-5 h-5" /></a>
+      <a href="#"><img src="/icons/twitter.svg" class="w-5 h-5" /></a>
+    </div>
+  </nav>
+</div>
